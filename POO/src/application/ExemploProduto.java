@@ -15,17 +15,19 @@ public class ExemploProduto {
 		Scanner leia = new Scanner(System.in);
 		
 		
-		Product p1 = new Product();
 		
 		System.out.println("Enter product data: ");
-		System.out.println("Name: ");
-		p1.name = leia.next();
 		
-		System.out.println("Price: ");
-		p1.price = leia.nextDouble();
+		System.out.print("Name: ");
+		String name = leia.nextLine();
 		
-		System.out.println("Quantity in Stock: ");
-		p1.quantity = leia.nextInt();
+		System.out.print("Price: ");
+		double price = leia.nextDouble();
+		
+		//System.out.print("Quantity in stock: ");
+		//int quantity = leia.nextInt();
+		
+		Product p1 = new Product(name, price);
 		
 		
 		System.out.println();
